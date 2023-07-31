@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Question 06</title>
+    </head>
+    <body>
+        <button onclick="gotosite()">Google</button>
+        <script>
+            function gotosite() {
+                var confirmation;
+                confirmation = confirm("Do you want to access google ?");
+                if(confirmation == true){
+                    window.location.href = ("https://www.google.com");
+                }
+                else
+                {
+                    document.write("You decided to stay !");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 03</title>
+    </head>
+    <body>
+        <script>
+            function redback() {
+                document.bgColor = "red";
+            }
+            function greenback() {
+                document.bgColor = "green";
+            }
+            function blueback() {
+                document.bgColor = "blue";
+            }
+            function original() {
+                document.bgColor = "white";
+            }
+        </script>  
+        <button onmouseover="redback()" onmouseout="original()">Red</button>
+        <button onmouseover="greenback()" onmouseout="original()">Green</button>
+        <button onmouseover="blueback()" onmouseout="original()">Blue</button> 
+    </body>
+</html>

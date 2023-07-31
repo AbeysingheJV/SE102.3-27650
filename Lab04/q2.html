@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Question 02</title>
+    </head>
+    <body>
+        <button onclick="result()">Grade</button>
+        <script>
+            var avg;
+            
+            window.onload = function() {
+                Marks();
+            }
+
+            function Marks(){
+                
+                var sum=0;
+                for(var i=0;i<5;i++){
+                    var a = parseInt(prompt("Enter marks"));
+                    sum = sum + a;
+                }
+                avg = sum / 5;
+
+                document.write("Sum is " + sum + "<br>");
+                document.write("Avg is " + avg + "<br>");
+            }
+
+            
+
+            function result() {
+                if(avg>30){
+                    window.alert("Congrats");
+                }
+                else {
+                    window.alert("Better luck next time");
+                }
+            }
+        </script>
+    </body>
+</html>
